@@ -10,7 +10,8 @@ The main goal is to compare multiple machine learning algorithms and identify wh
 
 **Pima Indians Diabetes Dataset**
 
-- **Source:** [Pima Indians Diabetes Dataset](https://github.com/jbrownlee/Datasets)
+- **Source(that we used in our project):** [Pima Indians Diabetes Dataset](https://github.com/jbrownlee/Datasets)
+- **link to the cvs file(keggle):** https://www.kaggle.com/datasets/kumargh/pimaindiansdiabetescsv
 - **Total Records:** 768
 - **Input Features:** 8
 - **Target Variable:** Outcome
