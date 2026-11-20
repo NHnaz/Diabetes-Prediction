@@ -10,8 +10,8 @@ The main goal is to compare multiple machine learning algorithms and identify wh
 
 **Pima Indians Diabetes Dataset**
 
-- **Source(that we used in our project):** [Pima Indians Diabetes Dataset](https://github.com/jbrownlee/Datasets)
-- **link to the cvs file(keggle):** https://www.kaggle.com/datasets/kumargh/pimaindiansdiabetescsv
+- **Source (that we used in our project):** [Pima Indians Diabetes Dataset](https://github.com/jbrownlee/Datasets)
+- **Link to the CSV file (Kaggle):** https://www.kaggle.com/datasets/kumargh/pimaindiansdiabetescsv
 - **Total Records:** 768
 - **Input Features:** 8
 - **Target Variable:** Outcome
@@ -28,6 +28,7 @@ The dataset contains medical information such as:
 - Age
 
 The `Outcome` column represents the prediction target:
+
 - `0` – No diabetes
 - `1` – Diabetes
 
@@ -49,6 +50,18 @@ The following preprocessing steps were performed:
 - Applied feature scaling for Logistic Regression.
 - Split the dataset into training and testing sets using an 80:20 ratio.
 - Used stratified splitting to maintain the class distribution.
+
+## Libraries Used
+
+The following Python libraries were used in this project:
+
+| Library | Purpose |
+|---|---|
+| Pandas | Data loading, manipulation, and analysis |
+| NumPy | Numerical operations |
+| Matplotlib | Data visualization and plotting |
+| Seaborn | Statistical visualization and correlation heatmaps |
+| Scikit-learn | Data preprocessing, model training, cross-validation, and evaluation |
 
 ## Model Evaluation
 
@@ -82,24 +95,6 @@ Based on the average F1-score from five-fold cross-validation:
 
 Random Forest achieved the highest average cross-validation F1-score and was selected as the best model based on that criterion.
 
-## Technologies Used
-
-- Python
-- Google Colab
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-
-## How to Run the Project
-
-1. Download or clone this repository.
-2. Open the Jupyter Notebook in Google Colab or Jupyter Notebook.
-3. Run the notebook cells in order.
-4. The dataset is loaded directly from its online source.
-5. The notebook performs preprocessing, model training, evaluation, and prediction.
-
 ## Project Outputs
 
 The project includes:
@@ -112,6 +107,16 @@ The project includes:
 - Cross-validation results.
 - Sample patient prediction.
 - Saved trained model and model comparison results.
+
+## Important Notes
+
+- The dataset contains 768 records and 8 input features.
+- Invalid zero values in selected medical columns are treated as missing values during preprocessing.
+- The dataset is divided into training and testing sets using an 80:20 ratio.
+- Five-fold stratified cross-validation is used to compare the models.
+- Random Forest was selected as the best model based on its highest average cross-validation F1-score.
+- Logistic Regression achieved a slightly higher test-set F1-score and recall than Random Forest.
+- The sample patient prediction is based on the trained model and should not be considered a medical diagnosis.
 
 ## Limitations
 
